@@ -1,0 +1,191 @@
+.MainNavbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 65px;
+  align-items: center;
+  background-color: #fff;
+  /* background: linear-gradient(#2ecc71, #73d610, #2ecc71); */
+  padding: 0 30px;
+  border-top: 2px solid #193859;
+  /* color: #73d610; */
+  border-bottom: 1px solid #000;
+}
+.logo {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+.logo h1 {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #da291c;
+  text-transform: uppercase;
+  /* padding-top: 8px; */
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.logo a {
+  text-decoration: none;
+}
+.logo h1:hover {
+  color: #193859;
+  font-weight: bold;
+  /* font-size: 23px; */
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.menu ul li {
+  font-size: 19px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #113153;
+}
+/* This part of code is just to put an underline of the navigation content */
+.menu ul li a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #193859;
+  transition: width 0.4s;
+  margin-top: 5px;
+}
+.menu ul li a:hover:after {
+  width: 100%;
+}
+/* This submenu class will show submenu when hover on it */
+/* .submenu {
+  color: #193859;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 19px;
+  cursor: pointer;
+}
+.submenu:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #193859;
+  transition: width 0.4s;
+  margin-top: 5px;
+}
+.submenu:hover:after {
+  width: 100%;
+} */
+.submenu {
+  color: #193859;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 19px;
+  cursor: pointer;
+  position: relative;
+  /* Needed to position submenu content absolutely within this container */
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it sits above other content */
+}
+
+.submenu-content a {
+  display: block;
+  padding: 3px 15px;
+  color: #193859;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: left;
+}
+
+.submenu:hover .submenu-content {
+  display: block; /* Show the submenu when hovering over the main menu item */
+}
+
+.submenu:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #193859;
+  transition: width 0.4s;
+  margin-top: 5px;
+}
+
+.submenu:hover:after {
+  width: 100%; /* Extend the underline effect across the submenu label on hover */
+}
+
+.left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-side .reward,
+.left-side .account,
+.left-side .search,
+.left-side .cart {
+  /* Additional styles for each individual item */
+  padding: 10px;
+  /* border: 1px solid #ccc;
+  border-radius: 5px; */
+  text-align: center;
+}
+
+.left-side .reward a {
+  color: #da291c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.left-side .reward a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #193859;
+  transition: width 0.4s;
+  color: #193859;
+}
+.left-side .reward a:hover {
+  /* width: 100%; */
+  color: #193859;
+}
+.left-side .reward a:hover:after {
+  width: 100%;
+}
+
+.left-side .account a,
+.left-side .search a,
+.left-side .cart a {
+  /* Additional styles for the anchor tags within each item */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #193859;
+}
+
+.left-side .reward:hover,
+.left-side .account:hover,
+.left-side .search:hover,
+.left-side .cart:hover {
+  /* Additional styles for hover effect on each item */
+  background-color: #f0f0f0;
+}

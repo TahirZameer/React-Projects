@@ -1,0 +1,48 @@
+/* MiniNavigation.css */
+
+.mini-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #193859;
+  padding: 10px;
+  color: #fff;
+  height: 35px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+
+/* .right-section {
+  display: flex;
+  align-items: center;
+} */
+
+.center-section {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 10px;
+}
+
+.icon {
+  margin-left: 20px;
+  /* margin-right: 10px; */
+  /* font-size: 1.5rem; */
+  font-size: 18px;
+  cursor: pointer;
+}
+.icon:hover {
+  color: #da291c;
+}
+
+/* .contact-info {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.contact-info p {
+  margin: 0;
+} */

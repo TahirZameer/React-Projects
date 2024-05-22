@@ -1,0 +1,141 @@
+.body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bestSellerShoesSample */
+
+.bestSellerShoesSample {
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bestSellerShoesSample h1 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.arrowIconRight {
+  /* font-size: 20px; */
+  padding-right: 30px;
+}
+.arrowIconRight:hover {
+  color: #043670;
+}
+.arrowIconLeft {
+  /* font-size: 20px; */
+  padding-left: 30px;
+}
+.arrowIconLeft:hover {
+  color: #043670;
+}
+.bestSellerShoesSample a {
+  padding-bottom: 2px;
+  /* font-weight: 100; */
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #193859;
+  transition: border-color 0.3s;
+  color: #193859;
+}
+
+.bestSellerShoesSample a:hover {
+  /* text-decoration-color: #043670; */
+  /* text-decoration-thickness: 1.5px; */
+  border-color: #043670; /* Change underline color on hover */
+  padding-bottom: 3px;
+}
+
+/* cards styling starts here */
+
+.imgCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px; /* Adjust as needed */
+}
+.cardInfo {
+  /* display: flex;
+  justify-content: center; */
+  flex: 0 0 30%; /* This will make each card take up 30% of the container width */
+  margin-bottom: 20px;
+  margin-top: 30px;
+  /* Add some space between cards */
+}
+.cardInfo:nth-child(n + 4) {
+  display: none; /* Hide cards from the fourth one onward */
+}
+
+.cardInfo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* This is Designed for Comfort Foot Health Shoes*/
+.footHealthShoes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  margin: 20px 0px;
+}
+.footHealthShoesImg {
+  width: 50%;
+  height: auto;
+  display: block;
+  /* border: 2px solid green; */
+}
+
+.content {
+  /* border: 1px solid red; */
+  max-width: 400px;
+  margin: 0 auto;
+  margin: 190px 100px;
+  color: #043670;
+}
+.content .signature {
+  font-size: 1rem;
+  font-weight: 200;
+  opacity: 0.75;
+}
+.content h1 {
+  font-size: 2.5rem;
+  /* font-weight: bolder; */
+  font-weight: 800;
+  width: 250px;
+  line-height: 1.1;
+}
+.content p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
+  word-spacing: 2px;
+  /* line-height: 1.2; */
+}
+.content .btn1 {
+  margin-top: 15px;
+  width: 50%;
+  height: 45px;
+  background-color: #043670;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .btn1:hover {
+  color: #043670;
+  background-color: #fff;
+  border: 1px solid #043670;
+}

@@ -1,0 +1,72 @@
+.background-image-miniDisplay {
+  /* width: 100%; */
+  background-size: cover;
+  background-image: url("./src/assets/footImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Set text color to contrast with the background */
+  text-align: center;
+  /* transition: background-image 1s ease-in-out; */
+  /* Add transition for smoother image changes */
+}
+
+.background-image-miniDisplay .content1 {
+  /* position: relative; */
+  /* max-width: 100%; */
+  /* width: 1080px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  /* margin: 0 auto; */
+}
+.background-image-miniDisplay .content1 .newArrivals {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  opacity: 0.75;
+}
+
+.background-image-miniDisplay .content1 .newArrivals1 {
+  width: 100%;
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  /* width: 800px; */
+}
+
+.background-image-miniDisplay.content1 .newArrivals2 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  /* width: 1000px; */
+}
+
+.buttons button {
+  padding: 13px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #193859;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.buttons button a {
+  text-decoration: none;
+}
+.buttons button:hover {
+  background-color: #193859;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.buttons button a:hover {
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
